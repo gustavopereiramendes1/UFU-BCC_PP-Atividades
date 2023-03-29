@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    int x, y , z, soma;
-    printf("Digite um valor: ");
-    scanf("%d" , &x);
-    printf("Digite outro valor: ");
-    scanf("%d" , &y);
-    printf("Digite mais um valor: ");
-    scanf("%d" , &z);
-    soma = x + y + z;
-    printf("A soma dos valores digitados eh: %d" , soma);
+    float num1, raiz, quadrado;
+    printf("Digite um numero: ");
+    scanf("%f" , &num1);
+    if(num1 > 0 ){
+        raiz = sqrt(num1);
+        printf("A raiz quadrada do numero eh: %.2f" ,raiz);
+    }else{
+        quadrado = pow(num1, 2);
+        printf("O quadrado do numero eh: %.2f" ,quadrado);
+    }
+
+
     return 0;
 }

@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    float x, quadrado;  //Cria duas variaveis do tipo flutuante
-    printf("Digite um numero real: ");
-    scanf("%f" , &x);   //Lê um valor e armazena em 'X'
-    quadrado = x * x;   //Calcula o quadrado de 'X' e armazena na varievel 'quadrado'
-    printf("O quadrado desse valor eh: %f \n" , quadrado); //Imprime o valor armazenado na variavel 'quadrado'
+    float num1, raiz, quadrado;
+    printf("Digite um numero: ");
+    scanf("%f" , &num1);
+    if(num1 > 0 ){
+        raiz = sqrt(num1);
+        quadrado = pow(num1, 2);
+        printf("\nO numero digitado ao quadrado eh: %.2f\n" ,quadrado);
+        printf("A raiz quadrada do numero digitado  eh: %.2f\n" ,raiz);
+    }
     return 0;
 }

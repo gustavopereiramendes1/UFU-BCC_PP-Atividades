@@ -1,12 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    float temperatura,fah;   //cria duas variaveis do tipo flutuante
-    printf("Digite a temperatura em grau Celsius: ");   //imprime uma mensagem inicial
-    scanf("%f" , &temperatura); //Lê um valor e armazena na variavel "temperatura"
-    fah = temperatura*(9.0/5.0)+32.0;  //converte o valor de temperatura em celsius para fahrenheit
-    printf("A temperatura em Fahrenheit eh: %f \n" , fah);  //imprime o resultado
+    int num1, num2;
+    printf("Digite um numero inteiro: ");
+    scanf("%d" ,&num1);
+    printf("Digite outro numero inteiro: ");
+    scanf("%d" ,&num2);
+
+    if(num1>num2){
+        printf("\nO maior numero eh %d\nE a diferenca entre eles eh %d\n" ,num1, (num1 - num2));
+    }else{
+        printf("\nO maior numero eh %d \nE a diferenca entre eles eh %d\n" ,num2, (num2 -num1));
+    }
+
     return 0;
 }

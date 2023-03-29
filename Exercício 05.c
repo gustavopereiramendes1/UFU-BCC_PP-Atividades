@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    int x, dividir;    //cria duas variaveis do tipo inteiro
-    printf("Digite um numero real: ");  //mensagem inicial com instrução
-    scanf("%d" , &x);  //Lê um valor e armazena na variavel 'x'
-    dividir = x/5;     //divide o valor de x por 5 e armazena na variavel "dividir"
-    printf("A quinta parte de %d eh: %d \n" , x, dividir);  //imprime o resultado
+    int num1, x;
+    printf("Digite um numero inteiro: ");
+    scanf("%d" ,&num1);
+    x = num1%2;
+    if(x==0){
+        printf("\nO numero %d eh par!\n" ,num1);
+    }else{
+        printf("\nO numero %d eh impar!\n" ,num1);
+    }
     return 0;
 }

@@ -1,10 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    float x;  //cria um variavel 'X' do tipo flutuante
-    scanf("%f" , &x); //lê um valor e armazena em 'X'
-    printf("O valor de X eh: %f" , x);  //imprime o valor de 'X'
+    float num1, raiz;
+    printf("Digite um numero: ");
+    scanf("%f" , &num1);
+    if(num1 > 0 ){
+        raiz = sqrt(num1);
+        printf("A raiz quadrado do numero eh: %.2f" ,raiz);
+    }else{
+        printf("\nNUMERO INVALIDO!\n");
+    }
+
+
     return 0;
 }

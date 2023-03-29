@@ -3,9 +3,19 @@
 
 int main()
 {
-    int x;   //Cria uma variavel do tipo inteiro
+    float num1, num2;
+    printf("Digite um numero: ");
+    scanf("%f" , &num1);
+    printf("Digite outro numero: ");
+    scanf("%f" , &num2);
 
-    scanf("%d" , &x);  //lÍ um valor e armazena na variavel 'X'
-    printf("O valor de X eh: %d" , x);  //imprime o valor de 'X'
+    if(num1 > num2){
+        printf("O maior numero eh: %f" ,num1);
+    } else if(num1 == num2){
+        printf("Os numero s√£o iguais!");
+
+    } else{
+        printf("O maior numero eh: %.2f" ,num2);
+    }
     return 0;
 }
