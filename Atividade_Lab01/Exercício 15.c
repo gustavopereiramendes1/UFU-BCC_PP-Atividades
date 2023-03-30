@@ -3,7 +3,7 @@
 
 int main()
 {
-    const float PI = 3.141592;     //constante, valor n„o pode ser alterado
+    const float PI = 3.141592;     //constante, valor n√£o pode ser alterado
     float graus, radianos;
     printf("Digite o angulo em radianos: ");
     scanf("%f" ,&radianos);
