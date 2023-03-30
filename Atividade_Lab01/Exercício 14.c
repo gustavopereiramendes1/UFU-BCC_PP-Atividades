@@ -3,7 +3,7 @@
 
 int main()
 {
-    const float PI = 3.141592;              //usando "const" para criar uma variavel que n„o pode ser alterada, uma constante
+    const float PI = 3.141592;              //usando "const" para criar uma variavel que n√£o pode ser alterada, uma constante
     float graus, radianos;
     printf("Digite o angulo em graus: ");
     scanf("%f" , &graus);
