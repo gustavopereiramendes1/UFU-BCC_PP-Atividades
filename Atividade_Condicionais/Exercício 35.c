@@ -5,7 +5,7 @@
 
 int main()
 {
-    int dia, mes, ano, bissexto;
+    int dia, mes, ano;
     printf("Digite o dia: ");
     scanf("%d/%d/%d" , &dia, &mes, &ano);
     
