@@ -11,7 +11,7 @@ int main()
 
     if(custo_fabri <= 12000){
         percen_distri = 0.05;
-        percen_impos = 0;
+        percen_impos = 1;
         custo_consu = custo_fabri + (custo_fabri * percen_distri) + (custo_fabri *percen_impos);
         printf("O custo ao consumidor de um carro novo eh: R$ %.2f\n" , custo_consu);
     }else if (custo_fabri >= 12000 && custo_fabri <= 25000)
