@@ -41,13 +41,7 @@ int main(){
     menor_media = media[0];
     maior_media = calcular_maiorMedia(media, maior_media);
     menor_media = calcular_menorMedia(media, menor_media);
-
-    for(int x = 0; x < Num_alunos; x++){
-        printf("%d, " , media[x]);
-    }
-    
-    
-    
+      
     imprimir_dados(alunos, media, maior_media, menor_media, maior);
 
     return 0;
